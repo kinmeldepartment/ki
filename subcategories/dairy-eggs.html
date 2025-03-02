@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy & Eggs - KinMel</title>
+    <link rel="stylesheet" href="../styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="main-layout">
+        <div class="categories-sidebar">
+            <h3>Dairy & Eggs</h3>
+            <ul class="category-list">
+                <li><a href="#milk"><i class="fas fa-wine-bottle"></i>Milk</a></li>
+                <li><a href="#cheese"><i class="fas fa-cheese"></i>Cheese</a></li>
+                <li><a href="#yogurt"><i class="fas fa-glass-whiskey"></i>Yogurt</a></li>
+                <li><a href="#eggs"><i class="fas fa-egg"></i>Eggs</a></li>
+                <li><a href="#butter"><i class="fas fa-square"></i>Butter & Spreads</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="product-grid">
+                <!-- Sample product card -->
+                <div class="product-card">
+                    <img src="../images/products/milk.jpg" alt="Fresh Milk">
+                    <div class="product-info">
+                        <h3>Fresh Milk</h3>
+                        <p class="price">Rs. 120/L</p>
+                        <div class="product-buttons">
+                            <button class="add-to-cart" onclick="addToCart('milk')">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="buy-now" onclick="buyNow('milk')">
+                                <i class="fas fa-bolt"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/include.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

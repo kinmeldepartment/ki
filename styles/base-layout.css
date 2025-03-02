@@ -1,0 +1,27 @@
+/* Base layout styles */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f3f5;
+    overflow-x: hidden;
+}
+
+.page-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-section {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+} 

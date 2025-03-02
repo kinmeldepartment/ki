@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil & Ghee - KinMel</title>
+    <link rel="stylesheet" href="../styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="main-layout">
+        <div class="categories-sidebar">
+            <h3>Oil & Ghee</h3>
+            <ul class="category-list">
+                <li><a href="#cooking-oil"><i class="fas fa-wine-bottle"></i>Cooking Oil</a></li>
+                <li><a href="#ghee"><i class="fas fa-jar"></i>Pure Ghee</a></li>
+                <li><a href="#olive-oil"><i class="fas fa-leaf"></i>Olive Oil</a></li>
+                <li><a href="#mustard-oil"><i class="fas fa-tint"></i>Mustard Oil</a></li>
+                <li><a href="#specialty-oils"><i class="fas fa-star"></i>Specialty Oils</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/products/sunflower-oil.jpg" alt="Sunflower Oil">
+                    <div class="product-info">
+                        <h3>Sunflower Oil</h3>
+                        <p class="price">Rs. 399/L</p>
+                        <div class="product-buttons">
+                            <button class="add-to-cart" onclick="addToCart('sunflower-oil')">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="buy-now" onclick="window.location.href='../payment.html?product=sunflower-oil'">
+                                <i class="fas fa-bolt"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards -->
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/include.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

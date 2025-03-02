@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Produce - KinMel</title>
+    <link rel="stylesheet" href="../styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="main-layout">
+        <!-- Sidebar -->
+        <div class="categories-sidebar">
+            <h3>Fresh Produce</h3>
+            <ul class="category-list">
+                <li><a href="#fruits"><i class="fas fa-apple-alt"></i>Fruits</a></li>
+                <li><a href="#vegetables"><i class="fas fa-carrot"></i>Vegetables</a></li>
+                <li><a href="#herbs"><i class="fas fa-leaf"></i>Herbs & Seasonings</a></li>
+                <li><a href="#organic"><i class="fas fa-seedling"></i>Organic Produce</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="product-grid">
+                <!-- Products will be dynamically loaded here -->
+                <div class="product-card">
+                    <img src="../images/products/tomatoes.jpg" alt="Fresh Tomatoes">
+                    <div class="product-info">
+                        <h3>Fresh Tomatoes</h3>
+                        <p class="price">Rs. 80/kg</p>
+                        <div class="product-buttons">
+                            <button class="add-to-cart" onclick="addToCart('tomatoes')">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="buy-now" onclick="buyNow('tomatoes')">
+                                <i class="fas fa-bolt"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards -->
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/include.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function buyNow(productId) {
+            // Get product details
+            const product = products[productId];
+            if (!product) return;
+
+            // Save purchase info to localStorage
+            const purchaseInfo = {
+                product: product,
+                quantity: 1,
+                subtotal: product.price,
+                shipping: 100,
+                total: product.price + 100
+            };
+            localStorage.setItem('currentPurchase', JSON.stringify(purchaseInfo));
+
+            // Redirect to payment page
+            window.location.href = '../payment.html';
+        }
+    </script>
+</body>
+</html> 

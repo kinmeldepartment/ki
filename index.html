@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINMEL DEPARTMENT STORE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header, footer {
+            background: #2874f0;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 20px;
+        }
+        nav a {
+            color: #1a237e;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3f51b5;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+        }
+        section {
+            padding: 60px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            animation: fadeIn 2s;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section:nth-child(odd) {
+            background: white;
+        }
+        section:nth-child(even) {
+            background: #f5f5f5;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .contact {
+            text-align: center;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #1a237e;
+        }
+        :root {
+            --primary-color: #ff0000;
+            --secondary-color: #00ff00;
+            --accent-color: #0000ff;
+        }
+        .slideshow {
+            position: relative;
+            height: 600px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+        }
+        .slideshow img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: slideshow 12s infinite;
+        }
+        .slideshow img:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .slideshow img:nth-child(2) {
+            animation-delay: 4s;
+        }
+        .slideshow img:nth-child(3) {
+            animation-delay: 8s;
+        }
+        @keyframes slideshow {
+            0%, 100% {
+                opacity: 0;
+            }
+            5%, 33.33% {
+                opacity: 1;
+            }
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: #1a237e;
+            text-align: center;
+            padding: 20px;
+        }
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        .store-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .kinmel {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+        .mel-part {
+            color: #ffff00;
+        }
+        .brand-tagline {
+            font-size: 18px;
+            margin-top: 5px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="store-title">
+                <a href="index.html" class="brand-link">
+                    <div class="brand-name">
+                        <span class="kinmel">KIN<span class="mel-part">MEL</span></span>
+                    </div>
+                    <span class="brand-tagline">Touching Lives, Everyday</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="news.html">News & Notice</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="slideshow">
+            <img src="kin1.jpg" alt="Slide 1">
+            <img src="kin2.jpg" alt="Slide 2">
+            <img src="kin3.jpg" alt="Slide 3">
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Kinmel Department Store. All rights reserved.</p>
+        <h3> Developed by <a href="https://www.facebook.com/imneilsapkota/">Sunil Sapkota</a></h3>
+    </footer>
+</body>
+</html>

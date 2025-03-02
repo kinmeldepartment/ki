@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership - Kinmel Department Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header, footer {
+            background: #2874f0;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 20px;
+        }
+        nav a {
+            color: #1a237e;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3f51b5;
+        }
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        .store-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .kinmel {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+        .mel-part {
+            color: #ffff00;
+        }
+        .brand-tagline {
+            font-size: 18px;
+            margin-top: 5px;
+            color: #fff;
+        }
+        .brand-link {
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        /* Leadership specific styles */
+        .leadership-hero {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(rgba(40, 116, 240, 0.9), rgba(40, 116, 240, 0.9)), 
+                        url('leadership-bg.jpg') center/cover;
+            color: white;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        .leadership-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+            justify-items: center;
+        }
+
+        .leader-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .leader-image {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .leader-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #f5f5f5;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .leader-card:hover .leader-image img {
+            transform: scale(1.1);
+        }
+
+        .leader-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .leader-name {
+            font-size: 1.5em;
+            color: #2874f0;
+            margin-bottom: 5px;
+        }
+
+        .leader-position {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .leader-message {
+            font-size: 0.9em;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .leader-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .leader-social a {
+            color: #2874f0;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .leader-social a:hover {
+            color: #1a237e;
+        }
+
+        .quote-icon {
+            font-size: 2em;
+            color: #2874f0;
+            opacity: 0.2;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="store-title">
+                <a href="index.html" class="brand-link">
+                    <div class="brand-name">
+                        <span class="kinmel">KIN<span class="mel-part">MEL</span></span>
+                    </div>
+                    <span class="brand-tagline">Touching Lives, Everyday</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="news.html">News & Notice</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="leadership-hero">
+            <h1>Our Leadership Team</h1>
+            <p>Meet the visionaries behind Kinmel Department Store</p>
+        </div>
+
+        <div class="leadership-grid">
+            <!-- Managing Director -->
+            <div class="leader-card">
+                <div class="leader-image">
+                    <img src="ushaj.jpg" alt="Managing Director">
+                </div>
+                <div class="leader-info">
+                    <h2 class="leader-name">Ushaj Khatri</h2>
+                    <p class="leader-position">Managing Director</p>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="leader-message">
+                        "Our vision is to create a shopping experience that not only meets but exceeds customer expectations. 
+                        We strive to be more than just a store - we aim to be a part of our community's daily life."
+                    </p>
+                    <div class="leader-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operations Director -->
+            <div class="leader-card">
+                <div class="leader-image">
+                    <img src="anand.jpg" alt="Operations Director">
+                </div>
+                <div class="leader-info">
+                    <h2 class="leader-name">Anand Kumar Basnet</h2>
+                    <p class="leader-position">Founder</p>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="leader-message">
+                        "Excellence in service is our priority. We continuously work to improve our operations 
+                        and ensure that every customer leaves our store with a smile."
+                    </p>
+                    <div class="leader-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+         
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kinmel Department Store. All rights reserved.</p>
+        <h3> Developed by <a href="https://www.facebook.com/imneilsapkota/">Sunil Sapkota</a></h3>
+    </footer>
+</body>
+</html> 

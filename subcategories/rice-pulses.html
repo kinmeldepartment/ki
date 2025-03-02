@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice & Pulses - KinMel</title>
+    <link rel="stylesheet" href="../styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="main-layout">
+        <div class="categories-sidebar">
+            <h3>Rice & Pulses</h3>
+            <ul class="category-list">
+                <li><a href="#rice"><i class="fas fa-seedling"></i>Rice Varieties</a></li>
+                <li><a href="#dal"><i class="fas fa-circle"></i>Lentils (Dal)</a></li>
+                <li><a href="#beans"><i class="fas fa-egg"></i>Beans</a></li>
+                <li><a href="#chickpeas"><i class="fas fa-dot-circle"></i>Chickpeas</a></li>
+                <li><a href="#organic"><i class="fas fa-leaf"></i>Organic Options</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/products/basmati-rice.jpg" alt="Basmati Rice">
+                    <div class="product-info">
+                        <h3>Premium Basmati Rice</h3>
+                        <p class="price">Rs. 250/kg</p>
+                        <div class="product-buttons">
+                            <button class="add-to-cart" onclick="addToCart('basmati-rice')">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="buy-now" onclick="buyNow('basmati-rice')">
+                                <i class="fas fa-bolt"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards -->
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/include.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

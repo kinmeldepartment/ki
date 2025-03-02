@@ -1,0 +1,152 @@
+.about-page {
+    min-height: 100vh;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(40, 116, 240, 0.8), rgba(40, 116, 240, 0.8)),
+                url('../images/store-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section {
+    padding: 4rem 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.store-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.store-info h2 {
+    color: #2874f0;
+    margin-bottom: 1.5rem;
+}
+
+.milestone {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.milestone i {
+    font-size: 2rem;
+    color: #2874f0;
+}
+
+.location-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.location-info h3 {
+    color: #2874f0;
+    margin-bottom: 1rem;
+}
+
+.location-info i {
+    margin-right: 0.5rem;
+}
+
+.values-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.value-card i {
+    font-size: 2.5rem;
+    color: #2874f0;
+    margin-bottom: 1rem;
+}
+
+.visit-section {
+    padding: 4rem 0;
+}
+
+.visit-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.store-hours, .contact-info {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.store-hours h3, .contact-info h3 {
+    color: #2874f0;
+    margin-bottom: 1rem;
+}
+
+.store-hours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.store-hours li {
+    margin-bottom: 0.5rem;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        padding: 3rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+} 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks & Beverages - KinMel</title>
+    <link rel="stylesheet" href="../styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="main-layout">
+        <div class="categories-sidebar">
+            <h3>Snacks & Beverages</h3>
+            <ul class="category-list">
+                <li><a href="#chips"><i class="fas fa-cookie"></i>Chips & Crisps</a></li>
+                <li><a href="#chocolates"><i class="fas fa-candy-cane"></i>Chocolates</a></li>
+                <li><a href="#biscuits"><i class="fas fa-cookie-bite"></i>Biscuits</a></li>
+                <li><a href="#softdrinks"><i class="fas fa-glass-whiskey"></i>Soft Drinks</a></li>
+                <li><a href="#juices"><i class="fas fa-wine-bottle"></i>Juices</a></li>
+                <li><a href="#tea-coffee"><i class="fas fa-mug-hot"></i>Tea & Coffee</a></li>
+                <li><a href="#energy-drinks"><i class="fas fa-bolt"></i>Energy Drinks</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/products/lays-cream-onion.jpg" alt="Lay's Cream & Onion">
+                    <div class="product-info">
+                        <h3>Lay's Cream & Onion</h3>
+                        <p class="price">Rs. 50</p>
+                        <div class="product-buttons">
+                            <button class="add-to-cart" onclick="addToCart('lays-cream-onion')">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="buy-now" onclick="buyNow('lays-cream-onion')">
+                                <i class="fas fa-bolt"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards -->
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/include.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

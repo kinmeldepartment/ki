@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Items - KinMel</title>
+    <link rel="stylesheet" href="../styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="main-layout">
+        <div class="categories-sidebar">
+            <h3>Bakery Items</h3>
+            <ul class="category-list">
+                <li><a href="#bread"><i class="fas fa-bread-slice"></i>Fresh Bread</a></li>
+                <li><a href="#cakes"><i class="fas fa-birthday-cake"></i>Cakes</a></li>
+                <li><a href="#pastries"><i class="fas fa-cookie"></i>Pastries</a></li>
+                <li><a href="#cookies"><i class="fas fa-cookie-bite"></i>Cookies</a></li>
+                <li><a href="#donuts"><i class="fas fa-dot-circle"></i>Donuts</a></li>
+                <li><a href="#muffins"><i class="fas fa-cheese"></i>Muffins</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/products/brown-bread.jpg" alt="Brown Bread">
+                    <div class="product-info">
+                        <h3>Fresh Brown Bread</h3>
+                        <p class="price">Rs. 80</p>
+                        <div class="product-buttons">
+                            <button class="add-to-cart" onclick="addToCart('brown-bread')">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="buy-now" onclick="buyNow('brown-bread')">
+                                <i class="fas fa-bolt"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards -->
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/include.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 
