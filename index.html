@@ -345,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </footer>
 <style>
     .modal {
-        display: none; /* Initially hidden */
+        display: flex; /* Show popup immediately */
         justify-content: center;
         align-items: center;
         position: fixed;
@@ -389,10 +389,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("DOMContentLoaded", function() {
         let modal = document.getElementById("formModal");
 
-        function openModal() {
-            modal.style.display = "flex";
-        }
-
         function closeModal() {
             modal.style.display = "none";
         }
@@ -404,8 +400,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        // Attach functions to window so they can be used inline
-        window.openModal = openModal;
+        // Attach close function to window
         window.closeModal = closeModal;
     });
 </script>
