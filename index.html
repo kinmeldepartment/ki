@@ -342,7 +342,32 @@ document.addEventListener("DOMContentLoaded", function() {
         <p>&copy; 2025 Kinmel Department Store. All rights reserved.</p>
         <h3> Developed by <a href="https://www.facebook.com/imneilsapkota/">Sunil Sapkota</a></h3>
     </footer>
-<style>
+    <style>
+        /* Stylish blinking button */
+        .apply-btn {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 30px;
+            color: white;
+            background: red;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+            animation: blink 1.5s infinite;
+            transition: background 0.3s ease;
+        }
+        .apply-btn:hover {
+            background: darkred;
+        }
+        
+        /* Blinking animation */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+
         /* Modal styles */
         .modal {
             display: none; /* Initially hidden */
@@ -383,6 +408,8 @@ document.addEventListener("DOMContentLoaded", function() {
 </head>
 <body>
 
+    <!-- Blinking Button -->
+    <button class="apply-btn" onclick="openModal()">Apply For Customer Card</button>
 
     <!-- Modal -->
     <div id="formModal" class="modal">
@@ -420,6 +447,9 @@ document.addEventListener("DOMContentLoaded", function() {
             window.closeModal = closeModal;
         });
     </script>
+
+</body>
+</html>
 
 </body>
 </html>
