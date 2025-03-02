@@ -1162,3 +1162,35 @@ body {
         grid-template-columns: 1fr;
     }
 } 
+/* For mobile devices */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 1025px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
