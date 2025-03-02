@@ -1194,3 +1194,28 @@ body {
         margin: 0 auto;
     }
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 100%; /* On small screens, take up full width */
+}
+
+@media (min-width: 768px) {
+    .item {
+        flex: 1 1 50%; /* On tablets, take up 50% width */
+    }
+}
+
+@media (min-width: 1025px) {
+    .item {
+        flex: 1 1 33%; /* On larger screens, take up 33% width */
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
