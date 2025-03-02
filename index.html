@@ -443,5 +443,67 @@ document.addEventListener("DOMContentLoaded", function() {
             window.closeModal = closeModal;
         });
     </script>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Image Notice</title>
+    <style>
+        /* Popup container */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Popup content */
+        .popup-content {
+            position: relative;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img src="your-image.jpg" alt="Notice" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <script>
+        // Show popup on page load
+        window.onload = function() {
+            let popup = document.getElementById("popup");
+            popup.style.display = "flex";
+            
+            // Hide popup after 10 seconds
+            setTimeout(function() {
+                popup.style.display = "none";
+            }, 10000);
+        };
+
+        // Close popup function
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
 </body>
 </html>
