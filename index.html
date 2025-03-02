@@ -308,13 +308,14 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="leadership.html">Leadership</a>
-        <a href="news.html">News & Notice</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="news.html">News & Notice</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <button onclick="openModal()">Membership Form</button>
+</nav>
            <div class="container">
         <section class="slideshow">
             <img src="images/kin1.jpg" alt="Slide 1">
@@ -342,5 +343,57 @@ document.addEventListener("DOMContentLoaded", function() {
         <p>&copy; 2025 Kinmel Department Store. All rights reserved.</p>
         <h3> Developed by <a href="https://www.facebook.com/imneilsapkota/">Sunil Sapkota</a></h3>
     </footer>
+<style>
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .modal-content {
+        background: white;
+        padding: 20px;
+        width: 50%;
+        max-width: 800px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+    }
+</style>
+
+<div id="formModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe src="https://docs.google.com/forms/d/1zZxZ6ey5pOgflvY6WHyAw7o19IimT2eKqq132Ut2sGw/viewform?embedded=true"></iframe>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById("formModal").style.display = "flex";
+    }
+    function closeModal() {
+        document.getElementById("formModal").style.display = "none";
+    }
+</script>
+
+
 </body>
 </html>
