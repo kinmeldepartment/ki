@@ -386,14 +386,29 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
 <script>
-    function openModal() {
-        document.getElementById("formModal").style.display = "flex";
-    }
-    function closeModal() {
-        document.getElementById("formModal").style.display = "none";
-    }
-</script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let modal = document.getElementById("formModal");
 
+        function openModal() {
+            modal.style.display = "flex";
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close modal when clicking outside the modal-content
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Attach functions to window so they can be used inline
+        window.openModal = openModal;
+        window.closeModal = closeModal;
+    });
+</script>
 
 </body>
 </html>
