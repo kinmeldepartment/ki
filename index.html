@@ -414,57 +414,5 @@ document.addEventListener("DOMContentLoaded", function() {
             <iframe src="https://docs.google.com/forms/d/1zZxZ6ey5pOgflvY6WHyAw7o19IimT2eKqq132Ut2sGw/viewform?embedded=true"></iframe>
         </div>
     </div>
- <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <img src="happyholi.jpg" alt="Notice" style="max-width: 100%; height: auto;">
-                <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let modal = document.getElementById("formModal");
-            let closeButton = document.querySelector(".close");
-
-            function openModal() {
-                modal.style.display = "flex";
-            }
-
-            function closeModal() {
-                modal.style.display = "none";
-            }
-
-            // Close modal when clicking the close button
-            closeButton.addEventListener("click", closeModal);
-
-            // Close modal when clicking outside the modal content
-            window.addEventListener("click", function (event) {
-                if (event.target === modal) {
-                    closeModal();
-                }
-            });
-
-            // Expose functions globally
-            window.openModal = openModal;
-            window.closeModal = closeModal;
-        });
-    </script>
-        <script>
-        // Show popup on page load
-        window.onload = function() {
-            let popup = document.getElementById("popup");
-            popup.style.display = "flex";
-            
-            // Hide popup after 10 seconds
-            setTimeout(function() {
-                popup.style.display = "none";
-            }, 10000);
-        };
-
-        // Close popup function
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-    </script>
-        </div>
-    </div>
-
-</body>
+     </body>
 </html>
